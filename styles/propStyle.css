@@ -1,0 +1,66 @@
+section{
+    padding: 0 1em .25em 1em;
+    border-bottom: solid;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    }
+
+h1,h2,h3{
+    margin-bottom:0;
+    padding-bottom:0;
+}
+
+
+
+h2 + p, h3 + p{
+    margin-top:0.25em;
+}
+
+li{
+    margin-bottom: 3px;
+}
+
+h2{
+    font-size: 1.75rem;
+}
+
+header{
+    padding: 0 5px;
+    background-color: #d52941;
+    }
+body{
+    background-color: #fff8e8;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 16pt;
+    margin-left:5%;
+    margin-right:5%;
+    font-family: verdana;
+    }
+main{
+    padding: .5em;
+    margin: 1em;
+    }
+footer{
+    clear: both;
+    background-color: #EDDDD4;
+    border: double;
+    padding: .25em;
+    margin: 1em .25em;
+    text-align: center;
+    } 
+
+.imageGallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.imageGallery img{
+    max-width: 400px;
+    margin: 8px;
+}

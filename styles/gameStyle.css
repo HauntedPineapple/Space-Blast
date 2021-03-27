@@ -1,0 +1,53 @@
+h1{
+    font-family: 'Oswald', sans-serif;
+    margin:5px;
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 8px 5px 3px #070947;
+}
+
+body{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: #003c94;
+}
+
+#container{
+    display: grid; 
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+
+#sidebar{
+    font-size:25px;
+    box-sizing: border-box;
+    border: 7px solid white;
+    width: 300px;
+    height: 700px;
+    background-color: #00255a;
+    text-align: center;
+}
+
+#text{margin: 50px 5px;
+}
+
+footer{
+    font-size: 20px;
+    border: 3px solid rgb(216, 216, 216);
+    padding: .35em;
+    box-sizing: border-box;
+    margin: auto;
+    background-color: #00255a;
+    text-align: center;
+    width:900px;
+    }  
+
+a{
+    color: white;
+}
+
+#instructions{
+    padding: 2rem;
+    font-size: 2rem;
+}

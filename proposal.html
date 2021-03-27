@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="styles/propStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <title>Project 3</title>
+</head>
+
+<body>
+    <header>
+        <h1>SPACE BLAST</h1>
+    </header>
+
+    <section>
+        <h2>I. High Concept</h2>
+        <p>Press [space] to blast!</p>
+    </section>
+
+    <section>
+        <h2>II. Genre</h2>
+        <ul>
+            <li>Shoot'em up</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>III. Platform</h2>
+        <p>Desktop only... for now.</p>
+    </section>
+
+    <section>
+        <h2>IV. Story</h2>
+        <p>This is an abstract, generic shooter so there isn't much story.
+            The premise is to just survive.
+            The mood and theme is action-y, and at times fast-paced.</p>
+        <p>The objective? Don't die for as long as possible, your score depends on it.</p>
+    </section>
+
+    <section>
+        <h2>V. Aesthetics</h2>
+        <p>Graphics style: Simple cartoon-y</p>
+        <p>Sound style: Looped music with a fast feel.</p>
+        <p>Types of sound: Sound effects, background music</p>
+    </section>
+
+    <section>
+        <h2>VI. Gameplay</h2>
+        <h3>Mechanics</h3>
+        <p>The mechanics are simple: dodge incoming enemies and fire to destroy them.</p>
+
+        <h3>Control</h3>
+        <p>The controls are bound to the keyboard; arrow keys and WASD to move and [space] to fire bullets.</p>
+
+        <h3>Teaching the game/New user experience aka "Onboarding"</h3>
+        <p>The controls will be displayed to the side of the canvas where the game is shown.</p>
+    </section>
+
+
+    <section>
+        <h2>VII. Mockups</h2>
+        <div class="imageGallery">
+            <img src="images/Game_Start-m.jpg" alt="The start screen">
+            <img src="images/Gameplay-m.jpg" alt="The gameplay">
+            <img src="images/Game_Over-m.jpg" alt="The game over screen">
+        </div>
+    </section>
+
+    <section>
+        <h2>VIII. Other</h2>
+        <p>Hopefully in the future, when there isn't a deadline, I can improve upon this.</p>
+    </section>
+
+    <section>
+        <h2>IX. About the developer</h2>
+        <h2>Audrey Main</h2>
+        <p>I'm a second year majoring in Game Design and Development. My specialty is object oriented programming.</p>
+        <h3>Skills</h3>
+        <ul>
+            <li>Programming languages: C#, Java, JavaScript</li>
+            <li>Software: Adobe Photoshop, Unity, Maya</li>
+            <li>Other: HTML, CSS</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>X. Documentation</h2>
+
+        <h3>Screenshots</h3>
+        <div class="imageGallery">
+            <img src="images/Game_Start.png" alt="The start screen">
+            <img src="images/Gameplay.png" alt="The gameplay">
+            <img src="images/Game_Over.png" alt="The game over screen">
+        </div>
+
+        <h3>Process</h3>
+        <p>
+            First I worked on creating the buttons for the screen and then began on the actual style of the page.
+            After making sure the game screen was set up I wrote code to handle the status display on the side and then
+            created a timer by using the setInterval() method to call a function that would add to the time displayed
+            every second.
+        </p>
+        <p>
+            I then went on to modify the Ship class into a Player class and different enemy classes.
+            The enemy types have their own movement behaviour, for now that is mainly just differences in speed, but
+            hopefully in the future I can add more.
+        </p>
+        <p>
+            I started out using the Circle Blast HW and erased most of the code in the methods, leaving the helper
+            script and the structure of the main script behind to use as the foundation.
+            The game loop would handle spawning enemies, moving the player and handling collisions as well as
+            increasing and decreasing the score.
+        </p>
+        <p>
+            While I was working I unfortunately couldn't get the enemy firing to work, so, because the deadline was
+            coming up, I decided the challenge would come from not just dodging enemy ships so as to
+            avoid damage, but also you had to keep the ships from getting past you and off the screen.
+        </p>
+
+        <h3>Sources</h3>
+        <ul>
+            <li><a href="https://opengameart.org/content/space-shooter-redux">Sprites</a></li>
+            <li><a href="https://opengameart.org/content/swing-along">Background music</a></li>
+            <li><a
+                    href="https://medium.com/@dovern42/handling-multiple-key-presses-at-once-in-vanilla-javascript-for-game-controllers-6dcacae931b7">Controller
+                    tutorial</a></li>
+            <li><a href="https://www.w3schools.com/jsref/met_win_setinterval.asp">setInterval() tutorial</a></li>
+            <li><a href="https://opengameart.org/content/bombexplosion8bit">Hit sound</a></li>
+            <li><a href="https://opengameart.org/content/starfield-background">Background</a></li>
+        </ul>
+
+        <h3>Requirements</h3>
+        <p>
+            The classes I made for the game are enemies which are pretty much
+            the same as the player class (which is modified from the ship class from Circle Blast)
+            and I used the bullet class as well from the Circle Blast HW.
+        </p>
+        <p>
+            I feel that this is different from Circle Blast in that firstly, the objective is different.
+            Instead of just shooting circles to increase your score, you're trying to keep the enemy ships from getting
+            past you which decreases your score. Of course there are also differences in the backend of the game, the 
+            enemy spawning is handled differently and in the future I can hopefully 
+            get the enemies to shoot and display different firing patterns and behaviours.
+        </p>
+        <p>
+            As I mentioned before, I couldn't get the enemy firing to work before the deadline 
+            but I came up with another idea to make the game more challenging. When the enemy ships reach the bottom 
+            of the screen the player loses points.
+        </p>
+    </section>
+
+    <footer><a href="index.html">Game Link</a></footer>
+</body>
+
+</html>
